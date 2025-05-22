@@ -6,16 +6,76 @@
   <title>Sash's Vibe Space</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fdf6f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      animation: floatIn 1s ease-out forwards;
+    }
+
+    .quote-box {
+      background: #ffe6f0;
+      padding: 1rem;
+      border-left: 5px solid #ff69b4;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    a.insta-link {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    a.insta-link i {
+      margin-right: 8px;
+    }
+
+    a.insta-link:hover {
+      color: #d63384;
+      transform: scale(1.05);
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Hey, I'm Sash!</h1>
-    <p>Just passed 12th. lokking future in IT world.</p>
+    <p>Just passed 12th. Looking to slay in the IT world.</p>
     <div class="quote-box">
       <p>"Healing begins the moment you decide to grow." – Sash</p>
     </div>
-    <p>Follow my vibe: 
-      <a href="https://instagram.com/sakshiislayssss" target="_blank">Instagram</a>
+    <p>
+      <a class="insta-link" href="https://instagram.com/sakshiislayssss" target="_blank">
+        <i class="fab fa-instagram"></i> @sakshiislayssss
+      </a>
     </p>
   </div>
 </body>
